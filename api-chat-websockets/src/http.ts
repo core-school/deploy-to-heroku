@@ -5,4 +5,8 @@ import { start_websockets } from "./io";
 
 const server = http.createServer(app);
 start_websockets(server);
-server.listen(PORT, () => console.log(`Ready on ${PORT}`));
+
+
+console.log(process.env)
+
+server.listen(PORT, () => console.log(`Ready on http://localhost:${PORT}`));
